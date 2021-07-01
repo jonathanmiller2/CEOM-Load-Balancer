@@ -7,5 +7,10 @@ services:
       context: .
       dockerfile: ./Dockerfile
     
+    volumes:
+      - ../CERTS:/CERTS
+    
     ports:
       - 80:80
+      - 443:443
+      
